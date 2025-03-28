@@ -18,7 +18,10 @@ group = 'org.springframework.samples'
 version = '3.4.0'
 
 java {
-  sourceCompatibility = JavaVersion.VERSION_17
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+        vendor = JvmVendorSpec.AMAZON
+    }
 }
 
 repositories {
